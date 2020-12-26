@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Covid-19 Tracker</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1 id="title" style="font-size:40px;">COVID-19 Data: United States</h1>
+    <h5>Data provided by <a id="source" href="https://covidtracking.com/">The Covid Tracking Project At The Atlantic</a></h5>
+    <h5 id="updateTime"></h5><br>
+    
+	<div class="dataContainer">
+		<div class="mainStats">
+            <div id="cases"></div>
+            <div id="recovered"></div>
+            <div id="deceased"></div>
+        </div>
+        <div class="extraStats">
+            <div class="testing">
+                <div class="testInfo">
+                    <div id="totalTests"></div>
+                    <div id="testInc"></div>
+                    <div id="pendTest"></div>
+                </div>
+                <div id="testingNeg"></div>
+                <div id="testingPos"></div>
+            </div>
+            <div class="healthcare">
+                <div class="careInfo">
+                    <div id="totalHosp"></div>
+                    <div id="currentHosp"></div>
+                    <div id="hospInc"></div>
+                </div>
+                <div id="needICU"></div>
+                <div id="needVent"></div>
+            </div>
+            <div class="states">
+                <div class=listHeaders>
+                    <div id="stateHead">State</div>
+                    <div id="recovHead">Recovered</div>
+                    <div id="casesHead">Cases</div>
+                    <div id="deathHead">Deceased</div>
+                    <div id="qualHead">Data Quality</div>
+                </div>
+                <div id="statesList"></div>                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
